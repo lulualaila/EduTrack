@@ -1,12 +1,12 @@
 <?php
-$host = "192.168.0.117";   // IP laptop A
-$user = "webuser";         // user baru
-$pass = "password123";     // password sesuai yang dibuat
-$db   = "mahasiswa";       // database
+$host = "localhost";   // nanti bisa diganti IP laptop lain
+$user = "root";
+$pass = "";
+$db   = "kampus_db";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Koneksi gagal: " . $conn->connect_error);
 }
 ?>
