@@ -1,8 +1,8 @@
 <?php
-$host = "192.168.0.117";   // IP laptop A
-$user = "webuser";         // user baru
-$pass = "password123";     // password sesuai yang dibuat
-$db   = "mahasiswa";       // database
+$host = "192.168.1.16";   
+$user = "webuser";        
+$pass = "password123";    
+$db   = "mahasiswa";      
 
 $conn = new mysqli($host, $user, $pass, $db);
 

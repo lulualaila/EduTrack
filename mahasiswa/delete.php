@@ -1,6 +1,9 @@
 <?php
 include '../db.php';
-$nim = $_GET['nim'];
-$conn->query("DELETE FROM dataMhs WHERE NIM='$nim'");
+if(isset($_GET['nim'])){
+    $nim = $conn->real_escape_string($_GET['nim']);
+    $conn->query("DELETE FROM dataMhs WHERE NIM='$nim'");
+}
 header("Location: index.php");
+exit;
 ?>
